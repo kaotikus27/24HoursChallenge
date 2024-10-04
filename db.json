@@ -73,6 +73,28 @@
       "stylenumber": "BROR-XX152",
       "price": "45.77",
       "image": "Rectangle 5r.png"
+    },
+    {
+      "id": "fc97",
+      "itemId": 1,
+      "name": "Hannah Gown",
+      "description": "Festive Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit",
+      "size": "S",
+      "color": "Multicolor",
+      "stylenumber": "BROR-WD106",
+      "price": "38",
+      "image": "Rectangle 1r.png"
+    },
+    {
+      "id": "c140",
+      "itemId": 4,
+      "name": "Sleeve Dress Diamante",
+      "description": "Diamante Puff Sleeve Dress - Black",
+      "size": "M",
+      "color": "Black Gold",
+      "stylenumber": "BROR-KS122",
+      "price": "45.77",
+      "image": "Rectangle 4r.png"
     }
   ]
 }

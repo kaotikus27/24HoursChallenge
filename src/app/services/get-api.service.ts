@@ -22,7 +22,6 @@ export class GetAPIService {
   ) { }
 
 
-
   /* all existing data */
   getAll(){
     return this._http.get<MockData[]>(this.APIURL);
