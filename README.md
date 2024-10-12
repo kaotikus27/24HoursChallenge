@@ -1,5 +1,7 @@
 # Threaded
 
+Used JSON Server for mocked-up data
+To Run JSON server use command npx json-server --watch db.json
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
 
 ## Development server
@@ -25,6 +27,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-"# 24HoursChallenge" 
-"# 24hoursChallenge-Threded" 
-"# 24hoursChallenge-Threded" 
+"# 24HoursChallenge"
+"# 24hoursChallenge-Threded"
+"# 24hoursChallenge-Threded"
