@@ -2,7 +2,7 @@
     <div class="content">
         <div class="top--container">
             <div class="left">
-                <h1>SHOPPINGS BAG (2) </h1>
+                <h1>SHOPPINGS BAG ({{totalCartItem}}) </h1>
                 <p> <span>Sign in</span> to sync your bag across your devices.</p>
             </div>
             <div class="right">
@@ -16,9 +16,9 @@
                     <p>ITEM</p>
                     <p>PRICE</p>
                 </div>
-                <div class="items">
+                <div  *ngFor="let item of boughtData; let i=index" class="items">
                     <div class="image">
-                        <img src="../../../../assets/images/Rectangle 1r.png" alt="" srcset="">
+                        <img src="../../../../assets/images/{{item.image}}" alt="" srcset="">
                     </div>
                     <div class="contents">
                         <div class="alert">
@@ -28,19 +28,19 @@
                             <p>BEST SELLER</p>
                         </div>
                         <div class="item-name">
-                            <p>Hanna Gown</p>
+                            <p>{{item.name}}</p>
                         </div>
                         <div class="item-description">
-                            <p>Bronx and Bronco</p>
+                            <p>{{item.description}}</p>
                         </div>
                         <div class="sizecolorqty">
-                            <p>Size: S,</p>
-                            <p>Color: Multicolor,</p>
-                            <p>Qty: 1</p>
+                            <p>Size: {{item.size}},</p>
+                            <p>Color: {{item.color}},</p>
+                            <p>Qty: {{item.qnty}}</p>
                         </div>
                         <div class="item-style">
                             <p>Style No.</p>
-                            <p class="stylenumber">BROR-WD106</p>
+                            <p class="stylenumber">{{item.stylenumber}}</p>
                         </div>
                         <div class="content--btn--actions">
                             <div class="sfl">
@@ -50,7 +50,7 @@
                                 <p>move to favorites</p>
                             </div>
                             <div class="remove">
-                                <p>remove</p>
+                                <p (click)="remove(item)">remove</p>
                             </div>
                             <div class="edit">
                                 <p>edit</p>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <div class="price">
-                        <p>38 USD</p>
+                        <p>{{item.price * item.qnty}} USD</p>
                     </div>
                 </div>
             </div>
@@ -69,18 +69,18 @@
                 <div class="content--summary">
                     <div class="top">
                         <div class="left">
-                            <p>Subtotal (2) </p>
+                            <p>Subtotal ({{totalCartItem}}) </p>
                             <p>FREE shipping! <span>details</span></p>
                         </div>
                         <div class="right">
-                            <p>38 USD</p>
+                            <p>{{totalPriceItem}} USD</p>
                             <p>0 USD</p>
                         </div>
                     </div>
                     <hr>
                     <div class="bottom">
                         <p>Estimated Total</p>
-                        <p>38 USD</p>
+                        <p>{{totalPriceItem}} USD</p>
                     </div>
                     <div class="VAT">
                         <p>VAT included!</p>

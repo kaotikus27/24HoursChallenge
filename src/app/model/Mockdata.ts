@@ -1,14 +1,35 @@
 export class MockData {
     itemId:number;
-    image: string;
+    name:string;
     description: string;
-    price: string;
+    size: string;
+    color: string;
+    stylenumber: string;
+    price: number;
+    image: string;
+    qnty:number;
+
     
 
-    constructor(){
-        this.itemId = 0;
-        this.image = '';
-        this.description = '';
-        this.price = '';
+    constructor(
+        itemId: number = 0,
+        name: string = '',
+        description: string = '',
+        size: string = '',
+        color: string = '',
+        stylenumber: string = '',
+        price: number = 0,
+        image: string = '',
+        qnty: number = 1  // Set default quantity to 1
+    ) {
+        this.itemId = itemId;
+        this.name = name;
+        this.description = description;
+        this.size = size;
+        this.color = color;
+        this.stylenumber = stylenumber;
+        this.price = price;
+        this.image = image;
+        this.qnty = qnty;
     }
 }

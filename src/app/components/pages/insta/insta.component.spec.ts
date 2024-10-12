@@ -8,7 +8,7 @@ describe('InstaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [InstaComponent]
+      declarations: [InstaComponent]
     })
     .compileComponents();
 

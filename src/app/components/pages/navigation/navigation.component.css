@@ -1,0 +1,58 @@
+.navigation-container {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px;
+  align-items: center;
+  max-width: 1440px;
+  box-shadow: 0 2px 4px 0 rgba(88, 88, 88, 0.113);
+}
+.navigation-container .logo {
+  cursor: pointer;
+}
+.navigation-container .left-nav {
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 14px;
+}
+.navigation-container .left-nav .highlight p {
+  font-weight: 600;
+}
+.navigation-container .left-nav .item {
+  padding: 9px 15px 9px 15px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.navigation-container .left-nav .item p {
+  cursor: pointer;
+}
+.navigation-container .right-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.navigation-container .right-nav img {
+  cursor: pointer;
+}
+.navigation-container .right-nav .currency-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #F2F2F2;
+  width: 110px;
+  height: 35px;
+  top: 18px;
+  border-radius: 50px;
+  padding: 5px;
+  cursor: pointer;
+}/*# sourceMappingURL=navigation.component.css.map */

@@ -3,11 +3,18 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "24HoursCodeChallenge": {
+    "threaded": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
         }
       },
       "root": "",
@@ -17,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/24-hours-code-challenge",
+            "outputPath": "dist/threaded",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -66,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "24HoursCodeChallenge:build:production"
+              "buildTarget": "threaded:build:production"
             },
             "development": {
-              "buildTarget": "24HoursCodeChallenge:build:development"
+              "buildTarget": "threaded:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -89,8 +96,7 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public",
-                "output": "/assets/*"
+                "input": "public"
               }
             ],
             "styles": [

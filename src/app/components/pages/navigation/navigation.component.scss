@@ -39,6 +39,13 @@
         justify-content: center;
         align-items: center;
         gap: 25px;
+        .shopping-bag{
+            p{
+                position: absolute;
+                top: 19.5px;
+                right: 300px;
+            }
+        }
         img{
             cursor: pointer;
         }

@@ -1,0 +1,75 @@
+.recently-bought-container {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recently-bought-container .header {
+  flex-direction: column;
+  text-align: center;
+  padding: 15px 0 15px 0;
+}
+.recently-bought-container .header h1 {
+  font-weight: 800;
+  font-size: 36px;
+}
+.recently-bought-container .item-sale-context {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+.recently-bought-container .item-sale-context .items {
+  display: flex;
+  flex-direction: column;
+  width: 225px;
+  height: 415px;
+  padding: 20px;
+  gap: 20px;
+}
+.recently-bought-container .item-sale-context .items img {
+  width: 225px;
+  height: 300px;
+  align-self: center;
+}
+.recently-bought-container .item-sale-context .items .description {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 5px;
+  width: 225px;
+  align-self: center;
+}
+.recently-bought-container .item-sale-context .items .price {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: -45px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.recently-bought-container .item-sale-context .items .price .discount {
+  color: #C1272D;
+  font-weight: 800;
+}
+.recently-bought-container .item-sale-context .items .btn-add-cart {
+  margin-top: -20px;
+  align-self: center;
+}
+.recently-bought-container .item-sale-context .items .btn-add-cart button {
+  align-self: center;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  color: #fff;
+  background-color: #000;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.recently-bought-container .item-sale-context .items .btn-add-cart button:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+}/*# sourceMappingURL=recentlybought.component.css.map */

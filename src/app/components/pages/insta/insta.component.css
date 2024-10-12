@@ -1,0 +1,55 @@
+.inspo-container {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inspo-container .header {
+  flex-direction: column;
+  text-align: center;
+  padding: 15px 0 15px 0;
+}
+.inspo-container .header h1 {
+  font-weight: 800;
+  font-size: 36px;
+}
+.inspo-container .header p {
+  font-weight: 400;
+  font-size: 14px;
+}
+.inspo-container .inspo--context {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+.inspo-container .inspo--context .items {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 265px;
+  height: 390px;
+}
+.inspo-container .inspo--context .items img {
+  width: 225px;
+  height: 225px;
+  align-self: center;
+}
+.inspo-container .btn-post {
+  margin-top: -130px;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.inspo-container .btn-post:hover {
+  border: 1px solid rgba(0, 0, 0, 0.038);
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24);
+}/*# sourceMappingURL=insta.component.css.map */

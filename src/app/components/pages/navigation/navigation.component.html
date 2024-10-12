@@ -20,8 +20,10 @@
         <div class="user">
             <img src="../../../../assets/icons/bx_bx-user.svg" alt="">
         </div>
-        <div routerLink="/shoppingbag" class="shopping-bag">
+        <div class="shopping-bag" (click)="toggleCart()">
            <img src="../../../../assets/icons/bx_bx-shopping-bag.svg" alt="">
+           <app-cart-modal *ngIf="showCart" ></app-cart-modal>
+           <p>{{totaCartItem}}</p>
         </div>
         <div class="heart">
             <img src="../../../../assets/icons/bx_bx-heart.svg" alt="">
@@ -37,7 +39,8 @@
             <!-- make this dynamic if have time -->
              <img src="../../../../assets/icons/US Flag.svg" alt="">
              <p>USD $</p>
-             <img src="../../../../assets/icons/down-arrow.svg" alt="">
+             <img  src="../../../../assets/icons/down-arrow.svg" alt="">
         </div>
+
     </div>
 </div>

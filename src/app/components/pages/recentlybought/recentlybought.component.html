@@ -3,59 +3,16 @@
         <h1>Recently Bought</h1>
     </div>
     <div class="item-sale-context">
-        <div class="items">
-            <img src="../../../../assets/images/Rectangle 1r.png" alt="" srcset="">
-            <p class="description">Festive Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit</p>
+        <div *ngFor="let item of mockData" class="items">
+            <img src="../../../../assets/images/{{item.image}}" alt="" srcset="">
+            <p class="description">{{item.description}}</p>
             <div class="price">
-                <p class="orig">$38</p>
-            </div>
+                <p class="orig">${{item.price}}</p>  
+        </div>
             <div class="btn-add-cart">
-                <button type="submit">Add to cart</button>
+                <button (click)="addtocart(item)" type="button">Add to cart</button>
             </div>
         </div>
-        <div class="items">
-            <img src="../../../../assets/images/Rectangle 2r.png" alt="" srcset="">
-            <p class="description">Festive Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit</p>
-            <div class="price">
-                <p class="discount">$5.77</p>
-                <p class="orig">$7.34</p>
-            </div>
-            <div class="btn-add-cart">
-                <button type="submit">Add to cart</button>
-            </div>
-        </div>
-        <div class="items">
-            <img src="../../../../assets/images/Rectangle 3r.png" alt="" srcset="">
-            <p class="description">Festive Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit</p>
-            <div class="price">
-                <p class="discount">$29</p>
-                <p class="orig">$39</p>
-            </div>
-            <div class="btn-add-cart">
-                <button type="submit">Add to cart</button>
-            </div>
-        </div>
-        <div class="items">
-            <img src="../../../../assets/images/Rectangle 4r.png" alt="" srcset="">
-            <p class="description">Festive Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit</p>
-            <div class="price">
-                <p class="orig">$38</p>
-            </div>
-            <div class="btn-add-cart">
-                <button type="submit">Add to cart</button>
-            </div>
-        </div>
-        <div class="items">
-            <img src="../../../../assets/images/Rectangle 5r.png" alt="" srcset="">
-            <p class="description">Festive Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit</p>
-            <div class="price">
-                <p class="discount">$69</p>
-                <p class="orig">$99.95</p>
-            </div>
-            <div class="btn-add-cart">
-                <button type="submit">Add to cart</button>
-            </div>
-        </div>
-    </div>
+     </div>
 </div>
  
