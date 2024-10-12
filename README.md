@@ -1,7 +1,11 @@
 # Threaded
 
 Used JSON Server for mocked-up data
+
+
 To Run JSON server use command npx json-server --watch db.json
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
 
 ## Development server
